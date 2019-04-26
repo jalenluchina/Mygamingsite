@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>My Game Site</title>
+</head>
+
+<body>
+   <header>
+      <h1>Gamers Ahoy!</h1>
+      <div id="navbar">
+          <a class="active" >Home</a>
+          <a href="./test.html">Games</a>
+          <a href="./aboutme.html">About me</a>
+        </div>
+      <link href="style.css" type="text/css" rel="stylesheet">
+   </header>
+   <link href="style.css" type="text/css" rel="stylesheet">
+   <div class="container">
+      <img src="https://wallpapertag.com/wallpaper/full/c/9/9/156616-gaming-pc-wallpaper-1920x1200-high-resolution.jpg" alt="Snow">
+      <button class="btn"><a href="./test.html" style="color: white">Play Now!</a></button>
+    </div>
+   <div class="ivan">
+   <h1>A Game Site for Epic Gamers</h1>
+   </div>
+
+  <script>
+      // When the user scrolls the page, execute myFunction 
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+  </script>
+
+</body>
+
+</html> 
