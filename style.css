@@ -150,3 +150,35 @@ header h1 {
   background-color: black;
 }
 
+
+/* Container needed to position the button. Adjust the width as needed */
+.adam {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.adam img {
+  width: 200%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.adam .legend {
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translate(-100%, -100%);
+  -ms-transform: translate(-100%, -100%);
+  background-color: #555;
+  color: white;
+  font-size: 20px;
+  padding: 24px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.adam .legend:hover {
+  background-color: black;
+}
